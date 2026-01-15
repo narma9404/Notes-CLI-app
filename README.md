@@ -1,23 +1,19 @@
-# Notes — CLI Notes & Tasks Application
+# Notes — CLI Notes Application
 
 Modular command-line notes and task manager.
 
 ## Project layout
 
 - `app.py` — CLI entry point  
-- `configs/` — configuration containers per environment  
+- `configs/` — configuration containers 
 - `src/` — core packages and services  
   - `auth/` — authentication service & validators  
   - `workspace/` — workspace management service  
   - `notebook/` — notebook directory service  
   - `note/` — note file service  
   - `task/` — task file service  
-  - `session/` — user session abstraction  
+  - `session/` — user session   
   - `utils/` — logging & helpers  
-
-## Requirements
-
-- Python 3.9+  
 
 
 ## Configuration
@@ -28,3 +24,4 @@ Modular command-line notes and task manager.
 - `NOTES_LOG_FILE` — Path to log file
 - `NOTES_PBKDF2_ITERS` — PBKDF2 hashing iterations for passwords
 - `NOTES_SALT_BYTES` — Salt byte size for password hashing
+
