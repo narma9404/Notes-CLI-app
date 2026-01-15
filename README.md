@@ -1,4 +1,4 @@
-# Notes — CLI Notes Application
+# CLI Notes Application
 
 Modular command-line notes and task manager.
 
@@ -24,4 +24,5 @@ Modular command-line notes and task manager.
 - `NOTES_LOG_FILE` — Path to log file
 - `NOTES_PBKDF2_ITERS` — PBKDF2 hashing iterations for passwords
 - `NOTES_SALT_BYTES` — Salt byte size for password hashing
+
 
