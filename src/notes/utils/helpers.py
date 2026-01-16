@@ -27,7 +27,7 @@ def open_file_cross_platform(path: str) -> None:
             os.startfile(path)
 
         elif sys.platform.startswith("darwin"):
-            subprocess.Popen(
+            subprocess.run(
                 ["open", path],
                 stdout=subprocess.DEVNULL,
                 stderr=subprocess.DEVNULL,
@@ -35,8 +35,8 @@ def open_file_cross_platform(path: str) -> None:
                 start_new_session=True,
             )
 
-        else:  # Linux / Unix
-            subprocess.Popen(
+        else:  
+            subprocess.run(
                 ["xdg-open", path],
                 stdout=subprocess.DEVNULL,
                 stderr=subprocess.DEVNULL,
@@ -47,4 +47,5 @@ def open_file_cross_platform(path: str) -> None:
     except Exception:
         logger.exception("Failed to open file: %s", path)
         raise
+
 
